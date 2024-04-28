@@ -1,0 +1,142 @@
+<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website for career</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <style>
+       
+#nth_logo{
+     height: 60px;
+     width: 120px;
+     border-radius: 10px;
+ }
+
+footer{
+       background-color: rgba(9,31,46,0.72);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.navbar{
+    background-color: rgba(9,31,46,0.72);
+
+}
+.container{
+    display: grid;
+        justify-items: center;
+
+}
+ body{
+     background-color: rgba(27,216,127,0.22);
+     background: url("img_2.png") no-repeat fixed;
+
+ }
+       
+.container1{
+ margin-top: 100px;
+ display: flex;
+ padding: 30px;
+ 
+}
+.container1>div{
+   padding: 30px;
+   margin: 30px;
+   background-color: aqua;
+   box-shadow: 0px 4px 10px 4px black;
+   border-radius: 14px;
+   
+}
+#reg-btn1:hover{
+   background-color: rgb(147, 155, 154);
+   color: rgb(9, 34, 59);
+}
+#reg-btn1{
+   box-shadow: 0px 3px 4px 0px black;
+   background-color: black;
+   color: antiquewhite;
+   margin: 20px 0px;
+   font-family: monospace ;
+}
+#login-btn1{
+   margin: 20px 0px;
+   background-color: white;
+   box-shadow: 0px 4px 4px 0px black;
+   color: black;
+   font-weight: 400;
+ text-decoration: solid;
+ font-family: monospace ;
+}
+#login-btn1:hover{
+   background-color: blue;
+   color: white;
+}
+   </style>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" id="brand logo">
+                <img src="img.png" id="nth_logo">
+            </a>
+            <button type="button" class="navbar-toggler"
+                    data-target="#navbarToggle" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <div class="navbar-nav mr-auto">
+                    <a href="index.html" class="nav-item nav-link text-white">Home</a>
+                </div>
+                <!--right side or navigation menus-->
+                <div class="navbar-nav ">
+                    <a href="#container1" class="nav-item nav-link text-white" >About</a>
+                    <a href="#container2" class="nav-item nav-link text-white">Services</a>
+                     <a href="login.html" class="nav-item nav-link text-white">Login</a>
+                </div>
+            </div>  <!--id toggler-->
+        </div> <!--container div-->
+    </nav>
+</header>
+
+   <div class="container1">
+        <div id="container1_id1">
+           <h3>Welcome to your personal info storage</h3>
+           <span class="about-class">
+            Welcome to our platform, where your personal information finds a secure and convenient home. Our website is designed with your privacy and accessibility in mind, offering a comprehensive solution for organizing and safeguarding your most important data. With our intuitive interface, you can effortlessly store and manage a wide range of personal information, from contact details and financial records to medical history and important documents. Rest assured, your data is encrypted and protected with the highest standards of security, ensuring that only you have access to it. Say goodbye to scattered files and misplaced information – with our platform, everything you need is just a click away, anytime, anywhere.
+           </span>
+           <div >
+            <button type="button" id="login-btn1" onclick="location.href ='login.html'">login</button>
+         </div>
+           <div>
+            <h1>If you dont have account</h1>
+            <h5>Please Register to add your information</h5>
+           </div>
+           <div >
+              <button type="button" id="reg-btn1" onclick="location.href ='home.html'" >Register</button>
+           </div>
+        </div>
+        
+   </div>
+
+    <footer>
+        copy rihgts  &copy; 2024 <a href="" style="color: white">Kishore Tech</a> @ all rights reserved.
+    </footer>
+</body>
+</html>
