@@ -1,5 +1,3 @@
-<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <style>
        
@@ -48,9 +46,10 @@ footer{
  }
        
 .container1{
- margin-top: 100px;
+ 
  display: flex;
  padding: 30px;
+ margin-top: -30px;
  
 }
 .container1>div{
@@ -85,6 +84,64 @@ footer{
    background-color: blue;
    color: white;
 }
+.container2{
+    margin-top: 100px;
+ display: grid;
+ padding: 30px;
+ 
+}
+.container2>div{
+   
+    margin: 30px;
+   
+}
+.div1container2{
+   
+   color: white;
+   padding: 0px 30px;
+   box-shadow: 0px 4px 10px 4px black;
+   border-radius: 14px;
+   display: ruby;
+   background-color: rgba(19, 113, 134, 0.355);
+   padding: 30px;
+}
+
+#channelName{
+    color: black   ;
+    font-family: fantasy;
+    
+}
+#channelName:hover{
+    text-decoration: overline blue;
+}
+
+#channel-btn{
+    box-shadow: 0px 4px 4px 3px black;
+}
+.channelroot{
+    font-size: 30px;
+    margin: 0px 40px 0px 0px;
+    color: white;
+    text-decoration: solid;
+    text-shadow: 2px 2px 1px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.youtubeheading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: unset;
+    color: white;
+    text-decoration: solid;
+    text-shadow: 2px 2px 1px black;
+}
+#courses{
+    color: black;
+    text-shadow: 2px 2px 2px rgb(21, 146, 195);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-class{
+    font-family: monospace;
+}
+
    </style>
 
 </head>
@@ -106,15 +163,24 @@ footer{
                 </div>
                 <!--right side or navigation menus-->
                 <div class="navbar-nav ">
-                    <a href="#container1" class="nav-item nav-link text-white" >About</a>
-                    <a href="#container2" class="nav-item nav-link text-white">Services</a>
-                     <a href="login.html" class="nav-item nav-link text-white">Login</a>
+                    <a href="" class="nav-item nav-link text-white" >About</a>
+                    <a href="" class="nav-item nav-link text-white">Services</a>
+                    <a href="home.html" class="nav-item nav-link text-white">Registeration</a>
                 </div>
             </div>  <!--id toggler-->
         </div> <!--container div-->
     </nav>
 </header>
-
+<div class="container2">
+    
+    <div class="div1container2">   
+     <div><h3 class="youtubeheading">If you have to learn some Technical courses like <span id="courses">"Java Full Stack with Project"</span> , visit my youtube channel !!</h3>
+    
+       <span class="channelroot">Click  here to get my channel...</span><button style="font-size:24px;border-radius: 10px" id="channel-btn"><i class="fa fa-youtube-play" style="font-size:26px;color:rgb(252, 12, 12) ; margin-top: 10px;"></i> <a href="https://www.youtube.com/channel/UCAkHZKojUFyRy_sHGiP294A"><span id="channelName"> CODE WITH KISHORE</span> </a></button><span></span>
+       </div>
+    
+</div>    
+</div>  <!-- container 2-->
    <div class="container1">
         <div id="container1_id1">
            <h3>Welcome to your personal info storage</h3>
@@ -122,21 +188,23 @@ footer{
             Welcome to our platform, where your personal information finds a secure and convenient home. Our website is designed with your privacy and accessibility in mind, offering a comprehensive solution for organizing and safeguarding your most important data. With our intuitive interface, you can effortlessly store and manage a wide range of personal information, from contact details and financial records to medical history and important documents. Rest assured, your data is encrypted and protected with the highest standards of security, ensuring that only you have access to it. Say goodbye to scattered files and misplaced information – with our platform, everything you need is just a click away, anytime, anywhere.
            </span>
            <div >
-            <button type="button" id="login-btn1" onclick="location.href ='login.html'">login</button>
+            <button type="button" id="login-btn1" >login</button>
          </div>
            <div>
             <h1>If you dont have account</h1>
             <h5>Please Register to add your information</h5>
            </div>
            <div >
-              <button type="button" id="reg-btn1" onclick="location.href ='home.html'" >Register</button>
+              <button type="button" id="reg-btn1" onclick="home.jsp" >Register</button>
            </div>
+           
         </div>
         
-   </div>
+   </div> <!-- container1 -->
+   
 
     <footer>
-        copy rihgts  &copy; 2024 <a href="" style="color: white">Kishore Tech</a> @ all rights reserved.
+        copy rihgts  &copy; 2024 <a href="https://www.youtube.com/channel/UCAkHZKojUFyRy_sHGiP294A" style="color: white">Kishore Tech</a> @ all rights reserved.
     </footer>
 </body>
 </html>
